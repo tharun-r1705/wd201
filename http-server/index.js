@@ -33,7 +33,7 @@ fs.readFile("home.html", (err, home) => {
           let url = request.url;
           response.writeHeader(200, { "Content-Type": "text/html" });
           switch (url) {
-            case "/registration.html":
+            case "/registration":
               response.write(registercontent);
               response.end();
               break;
